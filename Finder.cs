@@ -17,7 +17,7 @@
 
             if(File.Exists(s))
             {
-                return s1;
+                return s;
             }
             else
             {
