@@ -23,18 +23,6 @@ namespace Chrome_passwords_dump
             Fetch();
         }
 
-        private static byte[] ObjectToByteArray(object obj)
-        {
-            if (obj == null)
-                return null;
-
-            BinaryFormatter formatter = new BinaryFormatter();
-            using (MemoryStream stream = new MemoryStream())
-            {
-                formatter.Serialize(stream, obj);
-                return stream.ToArray();
-            }
-        }
 
         private static string Decrypt(byte[] pass, byte[] key)
         {
