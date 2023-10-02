@@ -9,4 +9,4 @@ The code will dump every password that chrome saved, into a json file.
 + Get every user data in the file
 + Decrypt all the passwors using **AES**
 
-> Notie tis works only in windows
+> Note tis works only in windows
