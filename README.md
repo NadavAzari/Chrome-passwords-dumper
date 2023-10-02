@@ -1,2 +1,12 @@
-# Chrome-passwords-dumper
-A simple c# program which runs on windows pc, and grabs all chrome login data into json file
+# Chrome passwords dumper
+
+The code will dump every password that chrome saved, into a json file.
+
+**Steps**
++ Locate **local state** file
++ Get the encryption key from the file
++ Locate the **local data** file
++ Get every user data in the file
++ Decrypt all the passwors using **AES**
+
+> Notie tis works only in windows
